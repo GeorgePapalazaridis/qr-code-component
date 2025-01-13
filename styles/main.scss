@@ -1,0 +1,25 @@
+@use "_variables";
+@use "_components";
+@use "_responsiveness";
+@use "_normalize";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    font-family: var(--font-family);
+    background-color: var(--slate-300);
+    color: var(--slate-900);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: var(--spacing-medium);
+}

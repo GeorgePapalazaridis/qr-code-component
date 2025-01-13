@@ -1,0 +1,31 @@
+@media (min-width: 1440px) {
+    .qr-code-card {
+        max-width: 350px;
+        min-width: 320px;
+        padding: var(--spacing-large);
+    }
+
+    :root {
+        /* Font Sizes for Large Screens (Desktops) */
+        --font-size-title: 1.5rem; /* 24px */
+        --font-size-paragraph: 1.125rem; /* 18px */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .qr-code-card {
+        padding: var(--spacing-medium);
+        max-width: 300px;
+        min-width: 280px;
+    }
+
+    .qr-text-wrapper {
+        margin: var(--spacing-small) 0rem;
+    }
+
+    :root {
+        /* Font Sizes for Medium Screens (Tablets) */
+        --font-size-title: 1.25rem; /* 20px */
+        --font-size-paragraph: 1rem; /* 16px */
+    }
+}
