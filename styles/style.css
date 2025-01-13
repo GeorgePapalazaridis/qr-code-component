@@ -46,6 +46,7 @@
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+  will-change: transform; /* Optimizes animation performance */
 }
 
 .qr-image {
@@ -55,6 +56,9 @@
 
 .qr-text-wrapper {
   margin: var(--spacing-medium) 0rem;
+  text-align: center;
+  transform: scale(1); /* Ensures no scaling of the text */
+  will-change: transform; /* Optimizes text rendering */
 }
 
 .qr-title {
@@ -62,6 +66,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--slate-900);
   margin: var(--spacing-medium) var(--spacing-small);
+  transform: scale(1); /* Prevents hover scaling from affecting this element */
 }
 
 .qr-description {
@@ -69,6 +74,7 @@
   font-weight: var(--font-weight-regular);
   color: var(--slate-500);
   margin: var(--spacing-medium) 0rem;
+  transform: scale(1); /* Prevents hover scaling from affecting this element */
 }
 
 @media (min-width: 1440px) {
