@@ -1,5 +1,19 @@
 {
-  "devDependencies": {
-    "sass": "^1.83.1"
-  }
+    "name": "qr-code-component",
+    "version": "1.0.0",
+    "description": "A QR Code Component built as part of a Frontend Mentor challenge.",
+    "main": "index.js",
+    "scripts": {
+        "build:css": "sass styles/main.scss styles/style.css",
+        "watch:css": "sass --watch styles/main.scss:styles/style.css",
+        "deploy": "npm run build:css && git push origin main"
+    },
+    "devDependencies": {
+        "sass": "^1.83.1"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "author": "George Papalazaridis",
+    "license": "MIT"
 }
