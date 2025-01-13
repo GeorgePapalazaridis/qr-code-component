@@ -4,6 +4,18 @@
     align-items: center;
 }
 
+.qr-link {
+    display: block; /* Makes the link behave like a block element */
+    text-decoration: none;
+}
+
+.qr-link:hover .qr-code-card,
+.qr-link:focus .qr-code-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
 .qr-code-card {
     background-color: var(--white);
     border-radius: var(--border-radius);
@@ -13,16 +25,6 @@
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.qr-code-card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
-.qr-code-card:focus-within {
-    outline: 2px solid var(--slate-500);
 }
 
 .qr-image {
